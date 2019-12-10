@@ -797,10 +797,9 @@ export default {
       ],
       urls:[
         {"url":'http://img3.imgtn.bdimg.com/it/u=1243579802,477407275&fm=26&gp=0.jpg'},
+        {"url":'http://img3.imgtn.bdimg.com/it/u=2310529702,1150777997&fm=26&gp=0.jpg'},
         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img3.imgtn.bdimg.com/it/u=3347118621,2155080646&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=2847987682,2833770564&fm=26&gp=0.jpg'}
+        {"url":'http://img3.imgtn.bdimg.com/it/u=3347118621,2155080646&fm=26&gp=0.jpg'}
       ],
      // temp:false
     }

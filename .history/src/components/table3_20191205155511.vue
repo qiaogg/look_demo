@@ -45,9 +45,9 @@
           },
           bmap: {
             // 百度地图中心经纬度
-            center: [118, 29],
+            center: [114.427877, 30.517249],
             // 地图缩放
-            zoom: 5,
+            zoom: 2,
             roam: true,
             mapStyle: {
                 style: 'light'
@@ -133,8 +133,8 @@
   #building {
     position: relative;
     left: 50%;
-    width: 100%;
-    height: 650px;
+    width: 90%;
+    height: 600px;
     margin-left: -45%;
     box-shadow: 0 0 10px #A6E3E9;
     border-radius: 10px;

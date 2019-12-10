@@ -133,7 +133,7 @@
   #building {
     position: relative;
     left: 50%;
-    width: 100%;
+    width: 90%;
     height: 650px;
     margin-left: -45%;
     box-shadow: 0 0 10px #A6E3E9;

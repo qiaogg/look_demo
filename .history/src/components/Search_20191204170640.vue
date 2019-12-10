@@ -20,7 +20,7 @@
             </div>
             <el-container style="height:400px">
               <el-aside width="300px" >
-                  <el-image :src="img" style="width:300px;height:300px;margin-top:42px;margin-right:0px"></el-image>
+                  <el-image :src="img" style="width:300px;height:300px;margin-top:0px;margin-right:0px"></el-image>
               </el-aside>
               <el-main style="background-color:#FFFFFF;">
                <h4 id="name"></h4>
@@ -28,6 +28,12 @@
               </el-main>
             </el-container>
     </el-card>
+    <el-drawer
+        title="我是标题"
+        :visible.sync="drawer"
+        :with-header="false">
+        <span>我来啦!</span>
+</el-drawer>
   </div>
 </template>
 <script>
@@ -796,11 +802,9 @@ export default {
         }
       ],
       urls:[
-        {"url":'http://img3.imgtn.bdimg.com/it/u=1243579802,477407275&fm=26&gp=0.jpg'},
+        {"url":'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3776587891,1635521972&fm=26&gp=0.jpg'},
         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img3.imgtn.bdimg.com/it/u=3347118621,2155080646&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=2847987682,2833770564&fm=26&gp=0.jpg'}
+         {"url":'http://b.hiphotos.baidu.com/image/h%3D300/sign=f17893bb6d380cd7f91ea4ed9144ad14/ca1349540923dd541748cb63d909b3de9c824885.jpg'}
       ],
      // temp:false
     }
@@ -814,7 +818,7 @@ export default {
             {   temp = 0
                 this.datail = this.data[i].detail
                 this.name = this.data[i].perChName
-                 this.img = this.urls[i].url
+                // this.img = this.urls[i].url
                 document.getElementById("demo1").innerHTML= this.data[i].detail,
                 document.getElementById("name").innerHTML= this.data[i].perChName
             }

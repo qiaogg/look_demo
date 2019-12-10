@@ -7,7 +7,6 @@ import upload from '@/components/upload'
 import Table from '@/components/Table'
 import Search from '@/components/Search'
 import table3 from '@/components/table3'
-import biao2 from '@/components/biao2'
 Vue.use(Router)
 
 export default new Router({
@@ -46,11 +45,6 @@ export default new Router({
           path: '/Search',
           name: 'Search',
           component: Search,
-        },
-        {
-          path: '/biao2',
-          name: 'biao2',
-          component: biao2,
         },
 
       ]

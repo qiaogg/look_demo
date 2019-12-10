@@ -16,7 +16,7 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">年收入</span>
              </el-menu-item>
-             <el-menu-item index="/table3" :disabled='lead'>
+             <el-menu-item index="/biao" :disabled='lead'>
                 <i class="el-icon-setting"></i>
                 <span slot="title">居住聚集地</span>
              </el-menu-item>
@@ -29,7 +29,7 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">关系图</span>
              </el-menu-item>
-             <el-menu-item index="/biao2">
+             <el-menu-item index="/table3">
                 <i class="el-icon-document"></i>
                 <span slot="title">明星八卦热词</span>
             </el-menu-item>
@@ -57,7 +57,7 @@
         </el-main>
       </el-container>
       <el-footer>
-        <h5>明星数据统计1.0.0</h5>
+        <h5> #####</h5>
       </el-footer>
     </el-container>
 
@@ -87,7 +87,7 @@ export default {
   background-color: #EBEEF5;
 }
 .el-aside{
-  background-color: #ffffff;
+  background-color: #E4E7ED;
   h2 {
             font-size: 15px;
             text-align: left;

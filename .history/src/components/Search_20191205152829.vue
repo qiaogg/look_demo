@@ -797,10 +797,9 @@ export default {
       ],
       urls:[
         {"url":'http://img3.imgtn.bdimg.com/it/u=1243579802,477407275&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img3.imgtn.bdimg.com/it/u=3347118621,2155080646&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=2847987682,2833770564&fm=26&gp=0.jpg'}
+        {"url":'http://img3.imgtn.bdimg.com/it/u=2310529702,1150777997&fm=26&gp=0.jpg'},
+         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
+         {"url":'http://b.hiphotos.baidu.com/image/h%3D300/sign=f17893bb6d380cd7f91ea4ed9144ad14/ca1349540923dd541748cb63d909b3de9c824885.jpg'}
       ],
      // temp:false
     }

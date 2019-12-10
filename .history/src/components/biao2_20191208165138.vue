@@ -7,21 +7,17 @@
    <div>
    </div>
    </el-card>
-   <el-button @click="fun">提交</el-button>
   </div>
 </template>
 <script>
   import echarts from 'echarts'
-  import data from '../../static/data/data.json';
   export default {
     name:'Table',
     data() {
       return {
         data3:[130,500,80,50,60,100],
-        data4: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         data1:['颜色1','颜色2','颜色3','颜色4','颜色5','颜色6','1','3'],
         color2:['#19faf6','#192cfa', '#e3fa19', '#fda617', '#fda617','#0f1961'],
-        data5:[820, 932, 901, 934, 1290, 1330, 1320],
       }
     },
     mounted() {
@@ -31,13 +27,13 @@
      let option = {
     xAxis: {
         type: 'category',
-        data: this.data4
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     },
     yAxis: {
         type: 'value'
     },
     series: [{
-        data: this.data5,
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
         type: 'line'
     }]
 };
@@ -50,11 +46,7 @@
       //建议加上以下这一行代码，不加的效果图如下（当浏览器窗口缩小的时候）。超过了div的界限（红色边框）
       window.addEventListener('resize',function() {myChart.resize()});
     },
-    methods: {
-      fun(){
-        alert(data.data.name)
-      }
-    },
+    methods: {},
     watch: {},
     created() {
  

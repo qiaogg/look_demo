@@ -20,7 +20,7 @@
             </div>
             <el-container style="height:400px">
               <el-aside width="300px" >
-                  <el-image :src="img" style="width:300px;height:300px;margin-top:42px;margin-right:0px"></el-image>
+                  <el-image :src="img" style="width:300px;height:300px;margin-top:45px;margin-right:0px"></el-image>
               </el-aside>
               <el-main style="background-color:#FFFFFF;">
                <h4 id="name"></h4>
@@ -797,10 +797,8 @@ export default {
       ],
       urls:[
         {"url":'http://img3.imgtn.bdimg.com/it/u=1243579802,477407275&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
-        {"url":'http://img3.imgtn.bdimg.com/it/u=3347118621,2155080646&fm=26&gp=0.jpg'},
-        {"url":'http://img0.imgtn.bdimg.com/it/u=2847987682,2833770564&fm=26&gp=0.jpg'}
+        {"url":'http://img3.imgtn.bdimg.com/it/u=2310529702,1150777997&fm=26&gp=0.jpg'},
+         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'}
       ],
      // temp:false
     }
