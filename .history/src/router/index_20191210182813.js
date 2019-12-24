@@ -9,7 +9,6 @@ import Search from '@/components/Search'
 import table3 from '@/components/table3'
 import biao2 from '@/components/biao2'
 import cloud from '@/components/cloud'
-import monery from '@/components/monery'
 Vue.use(Router)
 
 export default new Router({
@@ -58,11 +57,6 @@ export default new Router({
           path: '/cloud',
           name: 'cloud',
           component: cloud,
-        },
-        {
-          path: '/monery',
-          name: 'monery',
-          component: monery,
         },
 
       ]

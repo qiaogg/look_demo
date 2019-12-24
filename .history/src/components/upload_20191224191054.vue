@@ -2,18 +2,16 @@
 <div>
     <el-card style="height:800px">
           <el-tabs v-model="activeName" type="card" >
-            <el-tab-pane label="2018" name="first">
-                <xdh-scroll :on-reach-bottom="handleReachBottom">
-                    <el-card v-for="(item, index) in list2" :key="index" style="margin: 10px 0;width:600px;height:50px">
-                        {{ item.index }} 、{{item.name}}
-                    </el-card>
-                </xdh-scroll>
-            </el-tab-pane>
-            <el-tab-pane label="2017" name="second">配置管理</el-tab-pane>
-            <el-tab-pane label="2016" name="third">角色管理</el-tab-pane>
-            <el-tab-pane label="2015" name="fourth">定时任务补偿</el-tab-pane>
+            <el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
+            <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
+            <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
+            <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
          </el-tabs>
-        
+        <xdh-scroll :on-reach-bottom="handleReachBottom">
+                <el-card v-for="(item, index) in list2" :key="index" style="margin: 10px 0;width:600px">
+                     {{ item.index }} 、{{item.name}}
+                </el-card>
+        </xdh-scroll>
     </el-card>
 </div>
 </template>

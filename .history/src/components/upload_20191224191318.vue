@@ -4,7 +4,7 @@
           <el-tabs v-model="activeName" type="card" >
             <el-tab-pane label="2018" name="first">
                 <xdh-scroll :on-reach-bottom="handleReachBottom">
-                    <el-card v-for="(item, index) in list2" :key="index" style="margin: 10px 0;width:600px;height:50px">
+                    <el-card v-for="(item, index) in list2" :key="index" style="margin: 10px 0;width:600px;height:60px">
                         {{ item.index }} 、{{item.name}}
                     </el-card>
                 </xdh-scroll>

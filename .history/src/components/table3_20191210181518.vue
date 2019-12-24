@@ -1,8 +1,6 @@
 <template>
   <div>
-    <el-card>
-      <div id="building" ></div>
-    </el-card>
+    <div id="building"></div>
   </div>
 </template>
 
@@ -134,8 +132,8 @@
 <style scoped>
   #building {
     position: relative;
-    left: 43%;
-    width: 100%;
+    left: 50%;
+    width: 50%;
     height: 650px;
     margin-left: -45%;
     box-shadow: 0 0 10px #A6E3E9;

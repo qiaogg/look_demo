@@ -138,7 +138,7 @@
     width: 100%;
     height: 650px;
     margin-left: -45%;
-    box-shadow: 0 0 10px #A6E3E9;
+    box-shadow: 0 0 0px #A6E3E9;
     border-radius: 10px;
   }	
 </style>

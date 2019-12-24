@@ -134,7 +134,7 @@
 <style scoped>
   #building {
     position: relative;
-    left: 43%;
+    left: 450%;
     width: 100%;
     height: 650px;
     margin-left: -45%;

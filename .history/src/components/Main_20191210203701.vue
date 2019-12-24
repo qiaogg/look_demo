@@ -26,7 +26,7 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">明星收入数据统计</span>
              </el-menu-item>
-             <el-menu-item index="/monery">
+             <el-menu-item index="/test2">
                 <i class="el-icon-setting"></i>
                 <span slot="title">收入来源</span>
              </el-menu-item>
@@ -40,7 +40,7 @@
                 <i class="el-icon-document"></i>
                 <span slot="title">明星八卦热词</span>
             </el-menu-item>
-             <el-menu-item index="/biao2  ">
+             <el-menu-item index="/cloud">
                 <i class="el-icon-document"></i>
                 <span slot="title">八卦新闻</span>
             </el-menu-item>

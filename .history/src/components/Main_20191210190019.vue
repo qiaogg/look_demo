@@ -26,24 +26,33 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">明星收入数据统计</span>
              </el-menu-item>
-             <el-menu-item index="/monery">
-                <i class="el-icon-setting"></i>
-                <span slot="title">收入来源</span>
-             </el-menu-item>
              <h2>明星聚集地</h2>
              <el-menu-item index="/table3" :disabled='lead'>
                 <i class="el-icon-setting"></i>
                 <span slot="title">居住聚集地</span>
              </el-menu-item>
-              <h2>明星八卦</h2>
+            <el-menu-item index="/test2" :disabled='lead'>
+                <i class="el-icon-setting"></i>
+                <span slot="title">年收入</span>
+             </el-menu-item>
+             <h2>明星关系</h2>
+            <el-menu-item index="/">
+                <i class="el-icon-setting"></i>
+                <span slot="title">关系图</span>
+             </el-menu-item>
              <el-menu-item index="/cloud">
                 <i class="el-icon-document"></i>
                 <span slot="title">明星八卦热词</span>
             </el-menu-item>
-             <el-menu-item index="/biao2  ">
+           <el-menu-item index="/table3">
                 <i class="el-icon-document"></i>
-                <span slot="title">八卦新闻</span>
+                <span slot="title">####</span>
             </el-menu-item>
+              <h2>明星收入</h2>
+              <el-menu-item index="/cloud">
+                <i class="el-icon-setting"></i>
+                <span slot="title">####</span>
+             </el-menu-item>
           </el-menu>
         </el-aside>
         <el-main>

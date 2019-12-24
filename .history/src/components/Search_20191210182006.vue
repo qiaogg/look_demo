@@ -12,7 +12,7 @@
       <el-col :span="2" :offset="1"><el-button type="primary" @click="Search" style="width:150px">查询</el-button></el-col>
       <br>      
     </el-card>
-    <el-card style="margin-top:30px;height:500px;width:1270px" >
+    <el-card style="margin-top:30px;height:500px;width:1270px">
             <div slot="header" class="clearfix">
                 <span>个人简介:</span>
                 <span id="name"></span>
@@ -37,7 +37,6 @@ export default {
       name:'',
       datail:'',
       img:'',
-      show3: false,
       drawer: false,
       data:[
         {
@@ -797,7 +796,7 @@ export default {
         }
       ],
       urls:[
-        {"url":'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577790333&di=bb13e61d1a1c26e035fc4ac8019afee9&imgtype=jpg&er=1&src=http%3A%2F%2Fwx4.sinaimg.cn%2Flarge%2F006N1E3fly1fz0evq3q04j30fu08w464.jpg'},
+        {"url":'http://img3.imgtn.bdimg.com/it/u=1243579802,477407275&fm=26&gp=0.jpg'},
         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
         {"url":'http://img3.imgtn.bdimg.com/it/u=3347118621,2155080646&fm=26&gp=0.jpg'},
@@ -835,12 +834,12 @@ export default {
        temp = 1
     },
           open() {
-        this.$alert('更多信息请稍后', '更多信息', {
+        this.$alert('这是一段内容', '标题名称', {
           confirmButtonText: '确定',
           callback: action => {
             this.$message({
               type: 'info',
-              message: "退出成功"
+              message: `action: ${ action }`
             });
           }
         });

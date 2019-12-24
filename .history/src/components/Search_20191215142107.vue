@@ -797,7 +797,7 @@ export default {
         }
       ],
       urls:[
-        {"url":'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577790333&di=bb13e61d1a1c26e035fc4ac8019afee9&imgtype=jpg&er=1&src=http%3A%2F%2Fwx4.sinaimg.cn%2Flarge%2F006N1E3fly1fz0evq3q04j30fu08w464.jpg'},
+        {"url":'http://img3.imgtn.bdimg.com/it/u=1243579802,477407275&fm=26&gp=0.jpg'},
         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
         {"url":'http://img0.imgtn.bdimg.com/it/u=165140877,3327178563&fm=26&gp=0.jpg'},
         {"url":'http://img3.imgtn.bdimg.com/it/u=3347118621,2155080646&fm=26&gp=0.jpg'},
@@ -815,7 +815,7 @@ export default {
             {   temp = 0
                 this.datail = this.data[i].detail
                 this.name = this.data[i].perChName
-                 this.img = this.urls[i].url
+                // this.img = this.urls[i].url
                 document.getElementById("demo1").innerHTML= this.data[i].detail,
                 document.getElementById("name").innerHTML= this.data[i].perChName
             }

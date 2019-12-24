@@ -2,7 +2,7 @@
     <div>
         <div class="title" style="font-size: 23px;padding-left: 20px; margin-bottom: 20px;float:left">
               <span class="el-icon-search"></span>
-              明星收入数据统计
+              年收入统计
         </div>
         <br>
         <el-card style="margin-top:40px">
