@@ -930,7 +930,7 @@ restaurants: [],
       },
       createFilter(queryString) {
         return (restaurant) => {
-          return (restaurant.data.perChName.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+          return (this.data.perChName.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
         };
       },
     Search(){

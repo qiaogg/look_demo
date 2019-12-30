@@ -22,7 +22,7 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">收入排行榜</span>
              </el-menu-item>
-              <el-menu-item index="/Sortecharts">
+              <el-menu-item index="/test2">
                 <i class="el-icon-setting"></i>
                 <span slot="title">明星收入数据统计</span>
              </el-menu-item>

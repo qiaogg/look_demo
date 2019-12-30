@@ -916,7 +916,6 @@ export default {
 {"url":'https://ae01.alicdn.com/kf/Uf0c1c426de244408802ea35e5b83e472W.jpg'},
 {"url":'https://ae01.alicdn.com/kf/Uf0c1c426de244408802ea35e5b83e472W.jpg'},
 ],
-restaurants: [],
 
      // temp:false
     }

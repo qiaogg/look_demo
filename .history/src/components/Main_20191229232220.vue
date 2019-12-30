@@ -22,7 +22,7 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">收入排行榜</span>
              </el-menu-item>
-              <el-menu-item index="/Sortecharts">
+              <el-menu-item index="/test2">
                 <i class="el-icon-setting"></i>
                 <span slot="title">明星收入数据统计</span>
              </el-menu-item>
@@ -31,7 +31,7 @@
                 <span slot="title">收入来源</span>
              </el-menu-item>
              <h2>明星聚集地</h2>
-             <el-menu-item index="/Local" :disabled='lead'>
+             <el-menu-item index="/table3" :disabled='lead'>
                 <i class="el-icon-setting"></i>
                 <span slot="title">居住聚集地</span>
              </el-menu-item>
@@ -40,7 +40,7 @@
                 <i class="el-icon-document"></i>
                 <span slot="title">明星八卦热词</span>
             </el-menu-item>
-             <el-menu-item index="/New">
+             <el-menu-item index="/biao2  ">
                 <i class="el-icon-document"></i>
                 <span slot="title">八卦新闻</span>
             </el-menu-item>

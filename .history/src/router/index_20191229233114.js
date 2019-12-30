@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main'
 import Relation from '@/components/Relation'
-import Sortecharts from '@/components/Sortecharts'
+import test2 from '@/components/test2'
 import Sort from '@/components/Sort'
 import Table from '@/components/Table'
 import Search from '@/components/Search'
@@ -30,9 +30,9 @@ export default new Router({
           component: Sort,
         },
         {
-          path: '/Sortecharts',
-          name: 'Sortecharts',
-          component: Sortecharts,
+          path: '/test2',
+          name: 'test2',
+          component: test2,
         },
         {
           path: '/Table',

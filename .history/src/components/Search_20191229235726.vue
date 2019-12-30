@@ -7,13 +7,7 @@
         <br>
     <el-card style="height:100px;width:1270px;margin-top:40px">
       <el-col :span="5">
-           <el-autocomplete
-                class="inline-input"
-                v-model="name"
-                :fetch-suggestions="querySearch"
-                placeholder="请输入明星姓名"
-                :trigger-on-focus="false"
-            ></el-autocomplete>
+        <el-input v-model="name" placeholder="请输入明星姓名"></el-input>
       </el-col>
       <el-col :span="2" :offset="1"><el-button type="primary" @click="Search" style="width:150px">查询</el-button></el-col>
       <br>      
@@ -26,7 +20,7 @@
             </div>
             <el-container style="height:400px">
               <el-aside width="300px" >
-                  <el-image :src="img" style="width:265px;height:391px;margin-top:0px;margin-right:0px"></el-image>
+                  <el-image :src="img" style="width:227px;height:337px;margin-top:42px;margin-right:0px"></el-image>
               </el-aside>
               <el-main style="background-color:#FFFFFF;">
                <h4 id="name"></h4>
@@ -916,23 +910,11 @@ export default {
 {"url":'https://ae01.alicdn.com/kf/Uf0c1c426de244408802ea35e5b83e472W.jpg'},
 {"url":'https://ae01.alicdn.com/kf/Uf0c1c426de244408802ea35e5b83e472W.jpg'},
 ],
-restaurants: [],
 
      // temp:false
     }
   },
   methods:{
-      querySearch(queryString, cb) {
-        var restaurants = this.restaurants;
-        var results = queryString ? restaurants.filter(this.createFilter(queryString)) : restaurants;
-        // 调用 callback 返回建议列表的数据
-        cb(results);
-      },
-      createFilter(queryString) {
-        return (restaurant) => {
-          return (restaurant.data.perChName.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
-        };
-      },
     Search(){
       var temp = 1
       for(let i = 0;i<this.data.length;i++)
@@ -953,6 +935,7 @@ restaurants: [],
                 type: 'warning'
             });
        }else{
+           console.log(this.data[i].id)
            this.$message({
             message: '查询成功',
             type: 'success'

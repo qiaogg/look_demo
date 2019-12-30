@@ -916,7 +916,6 @@ export default {
 {"url":'https://ae01.alicdn.com/kf/Uf0c1c426de244408802ea35e5b83e472W.jpg'},
 {"url":'https://ae01.alicdn.com/kf/Uf0c1c426de244408802ea35e5b83e472W.jpg'},
 ],
-restaurants: [],
 
      // temp:false
     }
@@ -930,7 +929,7 @@ restaurants: [],
       },
       createFilter(queryString) {
         return (restaurant) => {
-          return (restaurant.data.perChName.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+          return (data.restaurant.perChName.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
         };
       },
     Search(){

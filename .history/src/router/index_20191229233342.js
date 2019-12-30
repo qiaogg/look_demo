@@ -32,7 +32,7 @@ export default new Router({
         {
           path: '/Sortecharts',
           name: 'Sortecharts',
-          component: Sortecharts,
+          component: test2,
         },
         {
           path: '/Table',

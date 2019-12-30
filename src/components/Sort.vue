@@ -1,6 +1,11 @@
 <template>
 <div>
-    <el-card style="height:800px">
+<div class="title" style="font-size: 23px;padding-left: 20px; margin-bottom: 20px;float:left">
+            <span class="el-icon-search"></span>
+            明星关系图
+        </div>
+        <br>
+    <el-card style="height:800px;margin-top:40px">
           <el-tabs v-model="activeName" type="card" >
             <el-tab-pane label="2018" name="first">
                 <xdh-scroll :on-reach-bottom="handleReachBottom">
@@ -9,9 +14,27 @@
                     </el-card>
                 </xdh-scroll>
             </el-tab-pane>
-            <el-tab-pane label="2017" name="second">配置管理</el-tab-pane>
-            <el-tab-pane label="2016" name="third">角色管理</el-tab-pane>
-            <el-tab-pane label="2015" name="fourth">定时任务补偿</el-tab-pane>
+            <el-tab-pane label="2017" name="second">
+                <xdh-scroll :on-reach-bottom="handleReachBottom">
+                    <el-card v-for="(item, index) in list2" :key="index" style="margin: 10px 0;width:600px;height:50px">
+                        {{ item.index }} 、{{item.name}}
+                    </el-card>
+                </xdh-scroll>
+            </el-tab-pane>
+            <el-tab-pane label="2016" name="third">
+                <xdh-scroll :on-reach-bottom="handleReachBottom">
+                    <el-card v-for="(item, index) in list2" :key="index" style="margin: 10px 0;width:600px;height:50px">
+                        {{ item.index }} 、{{item.name}}
+                    </el-card>
+                </xdh-scroll>
+            </el-tab-pane>
+            <el-tab-pane label="2015" name="fourth">
+                <xdh-scroll :on-reach-bottom="handleReachBottom">
+                    <el-card v-for="(item, index) in list2" :key="index" style="margin: 10px 0;width:600px;height:50px">
+                        {{ item.index }} 、{{item.name}}
+                    </el-card>
+                </xdh-scroll>
+            </el-tab-pane>
          </el-tabs>
         
     </el-card>

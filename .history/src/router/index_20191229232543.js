@@ -2,12 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main'
 import Relation from '@/components/Relation'
-import Sortecharts from '@/components/Sortecharts'
+import test2 from '@/components/test2'
 import Sort from '@/components/Sort'
 import Table from '@/components/Table'
 import Search from '@/components/Search'
 import Local from '@/components/Local'
-import New from '@/components/New'
+import biao2 from '@/components/biao2'
 import cloud from '@/components/cloud'
 import Source from '@/components/Source'
 Vue.use(Router)
@@ -30,9 +30,9 @@ export default new Router({
           component: Sort,
         },
         {
-          path: '/Sortecharts',
-          name: 'Sortecharts',
-          component: Sortecharts,
+          path: '/test2',
+          name: 'test2',
+          component: test2,
         },
         {
           path: '/Table',
@@ -50,9 +50,9 @@ export default new Router({
           component: Search,
         },
         {
-          path: '/New',
-          name: 'New',
-          component: New,
+          path: '/biao2',
+          name: 'biao2',
+          component: biao2,
         },
         {
           path: '/cloud',

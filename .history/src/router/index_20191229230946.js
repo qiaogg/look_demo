@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main'
-import Relation from '@/components/Relation'
-import Sortecharts from '@/components/Sortecharts'
-import Sort from '@/components/Sort'
+import Relationv from '@/components/Relation'
+import test2 from '@/components/test2'
+import upload from '@/components/upload'
 import Table from '@/components/Table'
 import Search from '@/components/Search'
-import Local from '@/components/Local'
-import New from '@/components/New'
+import table3 from '@/components/table3'
+import biao2 from '@/components/biao2'
 import cloud from '@/components/cloud'
-import Source from '@/components/Source'
+import monery from '@/components/monery'
 Vue.use(Router)
 
 export default new Router({
@@ -25,14 +25,14 @@ export default new Router({
           component: Relation,
         },
         {
-          path: '/Sort',
-          name: 'Sort',
-          component: Sort,
+          path: '/upload',
+          name: 'upload',
+          component: upload,
         },
         {
-          path: '/Sortecharts',
-          name: 'Sortecharts',
-          component: Sortecharts,
+          path: '/test2',
+          name: 'test2',
+          component: test2,
         },
         {
           path: '/Table',
@@ -40,9 +40,9 @@ export default new Router({
           component: Table,
         },
         {
-          path: '/Local',
-          name: 'Local',
-          component: Local,
+          path: '/table3',
+          name: 'table3',
+          component: table3,
         },
         {
           path: '/Search',
@@ -50,9 +50,9 @@ export default new Router({
           component: Search,
         },
         {
-          path: '/New',
-          name: 'New',
-          component: New,
+          path: '/biao2',
+          name: 'biao2',
+          component: biao2,
         },
         {
           path: '/cloud',
@@ -60,9 +60,9 @@ export default new Router({
           component: cloud,
         },
         {
-          path: '/Source',
-          name: 'Source',
-          component: Source,
+          path: '/monery',
+          name: 'monery',
+          component: monery,
         },
 
       ]
