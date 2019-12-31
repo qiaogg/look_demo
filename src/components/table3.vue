@@ -35,7 +35,8 @@
         this.chart = echarts.init(document.getElementById(id));
         this.chart.setOption({
           tooltip: {
-            trigger: 'item'
+            trigger: 'item',
+            formatter:'{b}:<br/>{c}'
           },
           toolbox: {
             feature: {
@@ -47,17 +48,17 @@
           },
           bmap: {
             // 百度地图中心经纬度
-            center: [118, 29],
+            center: [20, 35],
             // 地图缩放
-            zoom: 5,
+            zoom:1,
             roam: true,
             mapStyle: {
-                style: 'light'
+                style: 'dark'
             }
           },
           series: [
             {
-              name: '最喜爱建筑',
+              name: 'city',
               type: 'scatter',
               coordinateSystem: 'bmap',
               data: this.convertData(data.building.buildContent),
@@ -68,7 +69,7 @@
                 normal: {
                   formatter: '{b}',
                   position: 'right',
-                  show: true
+                  show: false
                 },
                 emphasis: {
                   show: true
@@ -86,7 +87,7 @@
               coordinateSystem: 'bmap',
               data: this.convertData(data.building.buildContent.sort(function (a, b) {
                 return b.value - a.value;
-              }).slice(0, 6)),
+              }).slice(0, 5)),
               symbolSize: function (val) {
                 return (val[2] + 2) * 3;
               },
@@ -97,7 +98,7 @@
               hoverAnimation: true,
               label: {
                 normal: {
-                  formatter: '{b}',
+                  formatter: 'Top5-{b}',
                   position: 'right',
                   show: true
                 }
