@@ -34,11 +34,11 @@
            Ydata2:[10, 52, 200, 334, 390, 330, 220],
            Xdata2: ['数据1','数据2','数据3','数据4','数据5'],
            data2:[
-                {value:335, name:'数据1'},
-                {value:310, name:'数据2'},
-                {value:234, name:'数据3'},
-                {value:135, name:'数据4'},
-                {value:1548, name:'数据5'}
+                {value:25, name:'影视作品'},
+                {value:51, name:'广告代言'},
+                {value:3, name:'观众支持'},
+                {value:10, name:'投资'},
+                {value:11, name:'其他'}
                 ],
             data3:[
                  [10.0, 8.04],
@@ -113,27 +113,33 @@
     },
     tooltip : {
         trigger: 'item',
-        formatter: "{a} <br/>{b} : {c} ({d}%)"
+        // formatter: "{a} <br/>{b} : {c} ({d}%)"
+      formatter:"{a} <br/>{b} :{d}%"
     },
     legend: {
         orient: 'vertical',
         left: 'left',
-        data: this.Xdata2
+        data: this.data2.name,
     },
     series : [
                {
                name: '访问来源',
                type: 'pie',
-               radius : '55%',
-               center: ['50%', '60%'],
+               radius :["50%","70%"],
+               avoidLabelOverlap: false,
                data:this.data2,
-               itemStyle: {
+                 label:{
+                   show:false,
+                   position:'center',
                    emphasis: {
-                       shadowBlur: 10,
-                       shadowOffsetX: 0,
-                       shadowColor: 'rgba(0, 0, 0, 0.5)'
+                     show:true,
+                     shadowBlur: 10,
+                     shadowOffsetX: 0,
+                     shadowColor: 'rgba(0, 0, 0, 0.5)',
+                     fontSize:'25',
+                     fontWeight:'bold'
                    }
-               }
+                 },
              }
            ]
         };
@@ -170,7 +176,7 @@
            }]
           };
       Chart1.setOption(option1);
-      Chart2.setOption(option2);
+      Chart2.setOption(option2,'dark');
       Chart3.setOption(option3);
       Chart4.setOption(option4);
       //建议加上以下这一行代码，不加的效果图如下（当浏览器窗口缩小的时候）。超过了div的界限（红色边框）
